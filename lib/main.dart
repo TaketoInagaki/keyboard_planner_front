@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter/cupertino.dart';
 
 import 'package:keyboard_planner_front/page/weekly.dart';
 
@@ -14,9 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return const CupertinoApp(
       title: 'KeyboardPlanner',
-      home: WeeklyPage(),
+      home: CupertinoPageScaffold(child: WeeklyPage()),
     );
   }
 }
